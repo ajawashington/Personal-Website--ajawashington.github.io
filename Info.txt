@@ -1,0 +1,33 @@
+BEYGOOD IS A OPEN, PUBLIC CHARITY APPLICATION. INDIVIDUALS MAKE CHARITY REQUESTS TO ASSIST WITH DAILY FINANCIAL SETBACKS. THIS APP ALLOWS DONORS TO PROVIDE THE FUNDS, SERVICES, OR ITEMS TO A PARTNERING BUSINESS OR ORGANIZATION. THE CHARITY INDIVIDUAL WILL RECEIVE A CREDITED ACCOUNT WITH THE BUSINESS OR ORGANIZATION AND BE ABLE TO REDEEM REQUESTS.
+
+THIS APPLICATION WAS INSPIRED BY AMERICAN SINGER, BEYONCÉ KNOWLES'S CHARITY INITIATIVE, BEYGOOD FOUNDATION, WHO WORKS WITH LOCAL CHARITIES TO HELP FUND RAISE AND RAISE AWARENESS FOR LOCAL CAUSES.
+
+Full CRUD functionality using React
+Utilizing API fetch calls to a local JSON database
+CSS used for styling and user experience
+https://github.com/ajawashington/BeyGood
+
+
+
+
+SWAP SHOP IS AN BARTERING APP INSPIRED BY THE COVID-19 PANDEMIC. THE EFFECT OF THE PANDEMIC REVEALED A BROKEN ECONOMY. SWAP SHOPPE WAS CREATED TO PROVIDE THE OPPORTUNITY TO WORKING CLASS CITIZENS TO BARTER WITH THEIR COMMUNITY SO THEY CAN CONTINUE TO PROVIDE FOR THEIR FAMILY.
+
+THIS APP ALLOWS USER TO CREATE BARTER ITEMS (FOODS, GOODS, SERVICES, ETC.) SET AT A VALUE BETWEEN 1-3 REPRESENTING ABUNDANT, BALANCED, AND SCARCE. THE USER IS ABLE TO SELECT OTHER USER ITEMS AND VICE VERSA TO TRADE. THEY ARE ABLE TO CHOOSE MULTIPLE QUANTITIES FOR ONE ITEM AND EACH TRADE IS EQUAL IN VALUE.
+
+Full stack MVC application utilizing Entity Framework
+Bootstrap for themes and styling
+Local SQL server for database
+https://github.com/ajawashington/SwapShop
+
+
+
+
+I have built my career tackling many different roles in a variety of industries as an instructor, assistant, and leader to companies. Simultaneously working with a brilliant team by my side, and handling projects independently.
+
+My life's work is committed to instilling divergent thinking to the global community; enhancing our humanity and humility. This shift in perspective begins with solving problems in a dynamic way and is what caught my interest in software development.
+
+Technology is the leading force of our society, its powerful, accessible features grants anyone the power to influence ideas, structures, and policy at a rapid rate.
+
+With my experience in arts & entertainment, hospitality, human instruction and study, I plan to allow my skill in software to build something focused on redefining the global idea of living and creating; influencing fruitful, invigorating lifestyles.
+
+My dedication to growth is what drives me to change my life and the world around me.
