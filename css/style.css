@@ -39,27 +39,26 @@ a:hover,a:focus,a:active {
 	outline:none!important;
 }
 p {
-	color:#484B70;
 	word-spacing:1px;
 	line-height:25px;
 	font-size:14px;
 }
 h2 {
-	font-size:15px;
-	color:#484B70!important;
+	font-size:20px;
+	color:#1A0F2E!important;
 	text-transform:uppercase;
 	font-weight:bold;
 }
 h2::after {
 	content:" ";
-	border:solid 1px #CCCCCC;
+	border:solid 2px #1A0F2E;
 	display:block;
-	width:65px;
+	width:80px;
 	margin:20px auto;
 }
 h6 {
-	font-size:15px;
-	color:#8c8c8c;
+	font-size:20px;
+	color:#1A0F2E;
 	text-transform:uppercase;
 	font-weight:bold;
 }
@@ -135,8 +134,8 @@ h5 {
 	margin:1.67em 0;
 }
 h6 {
-	font-size: 12px;
-	margin:2.33em 0;
+	font-size: 22px;
+	margin:1.7em 0;
 }
 abbr[title] {
 	border-bottom:1px dotted;
@@ -283,7 +282,9 @@ table {
 }
 /* ==========================================================================Section Styles========================================================================== */
 .section-padding {
-	padding:90px 0 100px
+	padding:100px 0 100px;
+	background-color:#F0F5F9;
+	margin-bottom: 50px;
 }
 .dark-bg {
 	background:#f3f5f8;
@@ -293,15 +294,15 @@ table {
 }
 .dark-box {
 	background: #F3F5F8;
-	-webkit-box-shadow: 0px 3px 0px 0px #E04343;
-	-moz-box-shadow: 0px 3px 0px 0px #E04343;
-	box-shadow: 0px 3px 0px 0px #E04343;
+	-webkit-box-shadow: 0px 3px 0px 0px #7CAFDF;
+	-moz-box-shadow: 0px 3px 0px 0px #7CAFDF;
+	box-shadow: 0px 3px 0px 0px #7CAFDF;
 	padding:20px 0;
 }
 .dark-box:hover,.dark-box:focus {
-	-webkit-box-shadow: 0px 3px 0px 0px #FFE801;
-	-moz-box-shadow: 0px 3px 0px 0px #FFE801;
-	box-shadow: 0px 3px 0px 0px #FFE801;
+	-webkit-box-shadow: 0px 3px 0px 0px #F4CF3E;
+	-moz-box-shadow: 0px 3px 0px 0px #F4CF3E;
+	box-shadow: 0px 3px 0px 0px #F4CF3E;
 }
 .box-hover {
 	transition:all 500ms ease-in-out;
@@ -369,7 +370,7 @@ table {
 	right:0.5em;
 	bottom:0.5em;
 	left:0.5em;
-	background: linear-gradient(#E04343 20%,rgba(0, 0, 0, 0) 20%,rgba(0, 0, 0, 0) 40%,#E04343 40%,#E04343 60%,rgba(0, 0, 0, 0) 60%,rgba(0, 0, 0, 0) 80%,#E04343 80%);
+	background: linear-gradient(#C9035F 20%,rgba(0, 0, 0, 0) 20%,rgba(0, 0, 0, 0) 40%,#C9035F 40%,#C9035F 60%,rgba(0, 0, 0, 0) 60%,rgba(0, 0, 0, 0) 80%,#C9035F 80%);
 	content:'';
 }
 .menu-button:hover {
@@ -468,7 +469,7 @@ table {
 	/* text-transform: uppercase; */
 }
 .hero h1 span {
-	color:#a1a9b0;
+	color:#C9035F;
 	/* display:inline-block; */
 }
 .hero h3 {
@@ -559,20 +560,21 @@ table {
 	margin:50px 0 0;
 }
 h1.arrow {
-	font-size: 16px;
+	font-size: 22px;
 	text-transform:uppercase;
-	color:#353535;
+	color:#1A0F2E;
 	letter-spacing: 4px;
 	background:url('../img/h1-bg.png') no-repeat center bottom;
 	padding-bottom:30px;
 	font-weight: bold;
 }
 h1.arrow span {
-    color: #B50356;
+    color: #1A0F2E;
 }
 /* ==========================================================================About========================================================================== */
 .about-image {
 	height:400px;
+	position: center;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
@@ -586,7 +588,7 @@ h1.arrow span {
     color: #FFE800;
 }
 .color-bg h6, .color-bg p {
-    color: white;
+    color:#F0F5F9;
 }
 .color-bg h6::after{
 	border-color: #fff;
@@ -601,12 +603,15 @@ h1.arrow span {
   border-color: rgba(0, 0, 0, 0);
 }
 .about-text {
-	padding:20px 50px 25px 50px;
+	padding:20px 50px 20px 50px;
+	background-color: #F0F5F9;
+
+
 }
 .about-text h1 {
 	text-transform:uppercase;
 	font-size:24px;
-	color: #8C8C8C;
+	color: #fff;
 }
 .color-bg h1.arrow span {
     color: #FFE800;
@@ -616,34 +621,33 @@ h1.arrow span {
 }
 /* ==========================================================================Services========================================================================== */
 .services {
-	margin-top:80px;
+	margin-top:20px;
 	margin-bottom:40px;
 }
 .services .icon {
-	position:relative;
-	width:200px;
-	height:200px;
+	position: relative;;
+	width:300px;
+	height:300px;
 	margin:auto;
 	text-align:center;
 	line-height:180px;
 	font-size:56px;
 	color:#fff;
-	background-image: ;
 	border-radius:50%;
 	box-shadow:0 0 0 0 rgba(0,0,0,0.0);
 	margin-bottom:40px;
 	-webkit-transition:all .3s ease-out;
 	transition:all .3s ease-out;
-	border: 4px solid #F2C618;
 	color: #C9035F;
 }
 .services .item:hover .icon {
-	background: #C9035F;
-	border: 4px solid #F2C618;
+	background: #7CAFDF;
 }
 .services .item [class*=fa] {
 	-webkit-transition:all .3s ease-out;
 	transition:all .3s ease-out;
+	margin-top:50px;
+	margin-bottom:40px;
 }
 
 .services .item:hover [class*=fa] {
@@ -872,14 +876,14 @@ img.grayscale:hover {
 }
 /* ==========================================================================CTA========================================================================== */
 .spacer-cta {
-	background-color: #E04343;
+	background-color: #1A0F2E;
 	padding:70px 0;
 }
 .outline-btn {
 	display:inline-block;
 	padding:25px 40px;
-	color: #FFE801;
-	border: solid 1px #FFE801;
+	color: #7CAFDF;
+	border: solid 1px #7CAFDF;
 	text-transform:uppercase;
 	font-weight:bold;
 	letter-spacing:1px;
@@ -892,15 +896,15 @@ img.grayscale:hover {
 .weight-outline-btn {
 	display:inline-block;
 	padding:20px 30px;
-	color:#8C8C8C;
-	border:solid 1px #8C8C8C;
+	color:#1A0F2E;
+	border:solid 1px #1A0F2E;
 	text-transform:uppercase;
 	font-weight:bold;
 	letter-spacing:1px;
 }
 .weight-outline-btn:hover,.outline-btn:focus {
-	color:#424242;
-	border: solid 1px #424242;
+	color:#1A0F2E;
+	border: solid 1px #1A0F2E;
 }
 /* ==========================================================================Team========================================================================== */
 .team img {
@@ -921,7 +925,7 @@ ul.social-buttons li:last-child {
 .social-btn {
 	width:40px;
 	height:40px;
-	background: #E04343;
+	background: #C9035F;
 	display:inline-block;
 	color:#fff;
 	font-size:17px;
@@ -958,10 +962,11 @@ ul.social-buttons li:last-child {
 	background: #FFE800;
 }
 .contact-details {
-	margin:70px 0;
+	margin:10px 0;
 }
 .contact-details h2 {
 	font-size:20px;
+	letter-spacing: 2px;
 }
 .contact-details h2 span {
 	display:block;
