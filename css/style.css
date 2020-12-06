@@ -35,7 +35,7 @@
   /* The "show" class is added to the filtered elements */
   .show {
 	display: inline-block;
-	
+	position: relative;
 	
   }
   
@@ -520,7 +520,7 @@ table {
 	margin:0;
 	padding:0;
 	opacity:0.5;
-	color: #C9035F;
+	color: #F4CF3E;
 	letter-spacing: 18px;
 	line-height: 80px;
 	text-transform: uppercase;
