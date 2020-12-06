@@ -18,6 +18,46 @@
 }
 
 
+.container {
+	overflow: hidden;
+  }
+  
+  .filterDiv {
+	float: left;
+	color: #ffffff;
+	width: 100px;
+	line-height: 100px;
+	text-align: center;
+	margin: 2px;
+	display: none; /* Hidden by default */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+	display: inline-block;
+	
+	
+  }
+  
+  /* Style the buttons */
+  .btn {
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: #f1f1f1;
+	cursor: pointer;
+  }
+  
+  /* Add a light grey background on mouse-over */
+  .btn:hover {
+	background-color: #ddd;
+  }
+  
+  /* Add a dark background to the active button */
+  .btn.active {
+	background-color: #666;
+	color: white;
+  }
 
 
 
@@ -102,6 +142,7 @@ html,button,input,select,textarea {
 body {
 	margin:0;
 	font-family: 'Open Sans',sans-serif;
+	background-color: #F0F5F9;
 }
 /* ==========================================================================Links========================================================================== */
 a:focus {
@@ -210,6 +251,7 @@ nav ul,nav ol {
 }
 /* ==========================================================================Embedded content========================================================================== */
 img {
+	
 	border:0;
 	-ms-interpolation-mode:bicubic;
 }
@@ -282,9 +324,9 @@ table {
 }
 /* ==========================================================================Section Styles========================================================================== */
 .section-padding {
-	padding:100px 0 100px;
+	padding:30px 0 30px;
 	background-color:#F0F5F9;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 .dark-bg {
 	background:#f3f5f8;
@@ -341,8 +383,9 @@ table {
 	transition-timing-function:cubic-bezier(0.7,0,0.3,1);
 }
 .content {
+	display: block;
 	position:relative;
-	background:#b4bad2;
+	/* background:#b4bad2; */
 	padding-bottom: 12em;
 }
 /* Common styles for menu button and menu-wrap */
@@ -698,7 +741,7 @@ i.respons {
 }
 /* ==========================================================================Portfolio========================================================================== */
 .swag {
-	padding:75px 0;
+	padding:40px 0;
 }
 .swag h1 {
 	text-transform:uppercase;
@@ -775,7 +818,7 @@ img.grayscale:hover {
 }
 .overlay {
 	display:block;
-	position:absolute;
+	position: relative;
 	z-index:20;
 	filter:none!important;
 	-webkit-filter:grayscale(0%);
@@ -876,8 +919,8 @@ img.grayscale:hover {
 }
 /* ==========================================================================CTA========================================================================== */
 .spacer-cta {
-	background-color: #1A0F2E;
-	padding:70px 0;
+	/* background-color: #1A0F2E; */
+	padding:30px 0;
 }
 .outline-btn {
 	display:inline-block;
