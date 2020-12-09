@@ -16,49 +16,140 @@
     overflow:visible;
     background: #fff url('../img/preloader.gif') no-repeat center center;
 }
-
-
-.container {
-	overflow: hidden;
+  
+#popup { 
+	display: none; 
+	border: 1px black solid;
+	width: 400px; height: 200px; 
+	top:20px; left:20px;
+	background-color: white;
+	z-index: 10;
+	padding: 2em;
+	position: fixed;
   }
   
-  .filterDiv {
-	float: left;
-	color: #ffffff;
-	width: 100px;
-	line-height: 100px;
-	text-align: center;
-	margin: 2px;
-	display: none; /* Hidden by default */
-  }
+  .darken { background: rgba(0, 0, 0, 0.7); }
   
-  /* The "show" class is added to the filtered elements */
-  .show {
-	display: inline-block;
+  #iframe { border: 0; }
+  
+  /* html, body, #page { height: 100%; } */
+
+.nav {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	flex: 1 1 auto;
+	padding: 10px 20px;
+	margin-top: 40px;
+}
+
+.btn {
 	position: relative;
-	
-  }
-  
-  /* Style the buttons */
-  .btn {
-	border: none;
-	outline: none;
-	padding: 12px 16px;
-	background-color: #f1f1f1;
-	cursor: pointer;
-  }
-  
-  /* Add a light grey background on mouse-over */
-  .btn:hover {
-	background-color: #ddd;
-  }
-  
-  /* Add a dark background to the active button */
-  .btn.active {
-	background-color: #666;
-	color: white;
-  }
+	padding: 0 5px;
+	margin: 0 5px;
+	font-size: 1.5em;
+	font-weight: 700;
+	color: grey;
+	text-decoration: none;
+	line-height: 1.5;
+}
+.btn::before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0;
+		height: 2px;
+		background: grey;
+		transition: all 200ms;
+}
+.btn:active {
+			color: black;
+			transition: all 350ms;
 
+		}
+
+
+/* // Portfolio Styles */
+.portfolio {
+	display:flex;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
+	padding: 0;
+	margin: 10px;
+	list-style: none;
+}
+
+.project {
+	display: flex;
+	position: relative;
+	/* flex: 1 0 calc(100% - 20px); */
+	margin: 10px;
+}
+
+.portfolio img {
+	display: inline;
+	float: left;
+	height:250px;
+	width:auto;
+}
+
+.project:hover img {
+	filter:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+	filter: blur(5px);
+	/* Firefox 3.5+,IE10 */ filter:beige;
+	/* IE6-9 */ -webkit-filter:grayscale(100%);
+	/* Safari 6.0 - 9.0 */-webkit-filter: blur(4px); 
+	/* Chrome 19+& Safari 6+*/ -webkit-transition:all .4s ease;
+	/* Fade to color for Chrome and Safari */ -webkit-backface-visibility:hidden;
+}
+
+  
+.project-info {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	color: #F0F5F9;
+	background: rgba(grey,1);
+	opacity: 0;
+	transition: all 350ms ease-in;
+}
+.project-info:hover {
+		opacity: 10;
+		background: rgba(grey,.7);
+	}
+
+
+.project-info-title {
+	/* margin:0 .25em; */
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: center;
+	text-transform: uppercase 
+}
+
+.project-info-button {
+	padding: .25em .25em;
+	color: inherit;
+	text-decoration: none;
+	font-weight: bold;
+	border: 1px solid #F0F5F9;
+	border-radius: 3px;
+	transition: all 300ms;
+}
+.project-info-button:hover {
+		color: grey;
+		background: beige;
+		border-color: beige;
+	}
 
 
 /* ==========================================================================
@@ -70,7 +161,6 @@ a {
 	-moz-transition:all 0.5s;
 	-o-transition:all 0.5s;
 	transition:all 0.5s;
-	border-bottom: 1px dashed;
 	outline:none!important;
 }
 a:hover,a:focus,a:active {
@@ -253,7 +343,7 @@ nav ul,nav ol {
 img {
 	
 	border:0;
-	-ms-interpolation-mode:bicubic;
+	/* -ms-interpolation-mode:bicubic; */
 }
 svg:not(:root) {
 	overflow: hidden;
@@ -603,7 +693,7 @@ table {
 	margin:50px 0 0;
 }
 h1.arrow {
-	font-size: 22px;
+	font-size: 36px;
 	text-transform:uppercase;
 	color:#1A0F2E;
 	letter-spacing: 4px;
@@ -612,7 +702,8 @@ h1.arrow {
 	font-weight: bold;
 }
 h1.arrow span {
-    color: #1A0F2E;
+	color: #1A0F2E;
+	
 }
 /* ==========================================================================About========================================================================== */
 .about-image {
@@ -768,25 +859,25 @@ i.respons {
 	color:#fff;
 	background:rgba(0,0,0,1);
 }
-.portfolio img {
-	height:300px;
-	width:100%;
-}
+
 img.grayscale {
+	filter:none;
+	-webkit-filter:grayscale(0%);
+	position: static;
+}
+img.grayscale:hover {
 	filter:url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
 	/* Firefox 3.5+,IE10 */ filter:gray;
 	/* IE6-9 */ -webkit-filter:grayscale(100%);
-	/* Chrome 19+& Safari 6+*/ -webkit-transition:all .6s ease;
+	/* Chrome 19+& Safari 6+*/ -webkit-transition:all .5s ease;
 	/* Fade to color for Chrome and Safari */ -webkit-backface-visibility:hidden;
 	/* Fix for transition flickering */
 }
-img.grayscale:hover {
-	filter:none;
-	-webkit-filter:grayscale(0%);
-}
+
 .row-offset-0 {
 	margin-left:0;
 	margin-right:0;
+	position: static;
 }
 .row-offset-0>* {
 	padding-left:0;
@@ -796,8 +887,6 @@ img.grayscale:hover {
 	padding-left:15px;
 }
 .effects .img {
-	position:relative;
-	position:relative;
 	z-index:1;
 	overflow:hidden;
 }
@@ -811,14 +900,14 @@ img.grayscale:hover {
 	margin-right:0;
 }
 .effects .img img {
-	display:block;
+	display:inline;
 	margin:0;
 	padding:0;
 	height:auto;
 }
 .overlay {
-	display:block;
-	position: relative;
+	display:inline;
+	position: static;
 	z-index:20;
 	filter:none!important;
 	-webkit-filter:grayscale(0%);
@@ -950,6 +1039,15 @@ img.grayscale:hover {
 	border: solid 1px #1A0F2E;
 }
 /* ==========================================================================Team========================================================================== */
+.fa {
+	margin: 10px;
+	padding: 10px;
+	font-size: 40px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+}
+
 .team img {
 	margin-bottom:20px;
 }
@@ -966,8 +1064,8 @@ ul.social-buttons li:last-child {
 	margin-right:0;
 }
 .social-btn {
-	width:40px;
-	height:40px;
+	width:80px;
+	height:80px;
 	background: #C9035F;
 	display:inline-block;
 	color:#fff;
