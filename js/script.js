@@ -1,9 +1,10 @@
+
 /******************************************************************************************************************************
-Waypoints
-*******************************************************************************************************************************/ 
+ Waypoints
+ *******************************************************************************************************************************/ 
 
 $(document).ready(function() {
-
+	
 	$('.wp1').waypoint(function() {
 		$('.wp1').addClass('animated fadeInLeft');
 	}, {
@@ -37,11 +38,15 @@ $(document).ready(function() {
 
 });
 
-/******************************************************************************************************************************
-Nav Button
-*******************************************************************************************************************************/ 
 
-$(window).load(function() {
+
+
+ 
+/******************************************************************************************************************************
+ Nav Button
+ *******************************************************************************************************************************/ 
+
+$(window).on('load', function() {
 
 	$('.nav_slide_button').click(function() {
 		$('.pull').slideToggle();
@@ -52,7 +57,7 @@ $(window).load(function() {
 
 $(function() {
 
-	$('a[href*=#]:not([href=#])').click(function() {
+	$('a[href*="#"]:not([href="#"])').click(function() {
 		if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
 
 			var target = $(this.hash);
@@ -76,55 +81,4 @@ document.querySelector("#nav-toggle").addEventListener("click", function() {
 	this.classList.toggle("active");
 });
 
-/******************************************************************************************************************************
-Flexsliders
-*******************************************************************************************************************************/ 
-
-$(window).load(function() {
-
-	$('#blogSlider').flexslider({
-		animation: "slide",
-		directionNav: false,
-		controlNav: true,
-		touch: false,
-		pauseOnHover: true,
-		start: function() {
-			$.waypoints('refresh');
-		}
-	});
-
-	$('#servicesSlider').flexslider({
-		animation: "slide",
-		directionNav: false,
-		controlNav: true,
-		touch: true,
-		pauseOnHover: true,
-		start: function() {
-			$.waypoints('refresh');
-		}
-	});
-
-	$('#teamSlider').flexslider({
-		animation: "slide",
-		directionNav: false,
-		controlNav: true,
-		touch: true,
-		pauseOnHover: true,
-		start: function() {
-			$.waypoints('refresh');
-		}
-	});
-	
-		$('#clientSlider').flexslider({
-		animation: "slide",
-		directionNav: false,
-		controlNav: true,
-		touch: true,
-		pauseOnHover: true,
-		start: function() {
-			$.waypoints('refresh');
-		}
-	});
-
-});
 
