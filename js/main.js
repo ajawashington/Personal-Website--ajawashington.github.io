@@ -74,17 +74,6 @@ function myFunction() {
 	}
 
 
-	 $(".carousel").swipe({
-
-		swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-	  
-		  if (direction == 'left') $(this).carousel('next');
-		  if (direction == 'right') $(this).carousel('prev');
-	  
-		},
-		allowPageScroll:"vertical"
-	  
-	  });
 
 	  $('body').on('hidden.bs.modal', '.modal', function () {
 		$('video').trigger('pause');
